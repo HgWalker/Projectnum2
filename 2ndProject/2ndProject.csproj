@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Bio.razor.css" />
+    <None Remove="Pages\Contact.razor.css" />
+    <None Remove="Pages\Education.razor.css" />
+    <None Remove="Pages\Email.razor.css" />
+    <None Remove="Pages\Index.razor.css" />
+    <None Remove="Pages\Work.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Pages\Education.razor.css" />
+    <Compile Include="Pages\Index.razor.css" />
+    <Compile Include="Pages\Work.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Pages\Bio.razor.css" />
+    <Content Include="Pages\Contact.razor.css" />
+    <Content Include="Pages\Email.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.10" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
